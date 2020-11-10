@@ -1,0 +1,1 @@
+web: gunicorn asikur.wsgi --log-file -
