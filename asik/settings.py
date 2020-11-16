@@ -88,7 +88,8 @@ WSGI_APPLICATION = 'asik.wsgi.application'
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
 
-
+# local database config
+"""
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
@@ -98,7 +99,17 @@ DATABASES = {
         'HOST':'localhost'
     }
 }
-
+"""
+# production database config
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME':'dbdspsvm16lmk1',
+        'USER':'fgefnmzcupusuv',
+        'PASSWORD':'f31a8d1eb0ff5a5c6377a445ee83bdaf126dcc1361ee8d26adf9e369a2206e87',
+        'HOST':'ec2-3-214-4-151.compute-1.amazonaws.com'
+    }
+}
 
 
 # Password validation
